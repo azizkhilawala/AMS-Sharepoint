@@ -1,0 +1,72 @@
+html,body,div, ul, li, header, section, button, h2, h3{
+	margin:0; padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#4f5356;
+}
+html,body,div, ul, li, header, button{font-size:12px;}
+li{list-style:none;}
+#ipGroupingWrapper{width:95%; margin:10px auto;}
+header{
+/*box-shadow: 0px 0px 10px 0px rgba(0, 114, 198, 0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0, 114, 198, 0.75);
+-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 114, 198, 0.75);*/
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;
+border-bottom:2px solid #0072c6;height: 70px;
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 60%, #b1dbfa 96%, #abcfea 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 60%,#b1dbfa 96%,#abcfea 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 60%,#b1dbfa 96%,#abcfea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#abcfea',GradientType=0 ); /* IE6-9 */
+
+}
+header div{margin-top: 27px; float:left; width:100%; text-align:center;}
+header img{}
+header ul{margin: 25px auto 0 auto; float:left; width:97%;}
+header ul>li{border-left:1px solid #c0c0c0; float:left; padding:2px 15px 2px 15px;font-size: 14px;}
+header ul>li>a{color:#6a6a6a; text-decoration:none;}
+header ul>li>a:hover{color:#0072c6;}
+header ul>li:first-child{border:0;}
+#ipGroupingContent{margin:40px 0 0 0; height:450px; overflow:auto; padding-right:2px;}
+section{margin:20px 0 55px 0;  position:relative; overflow:hidden;}
+section>h2,section>p,section>div.groupoptions{}
+section>h2{color:#0072c6;}
+section>p{width:90%;}
+section>div.groupseperator>hr,section>div.groupseperator>button{position:absolute;}
+
+section>div.groupseperator{/* background:url(../images/topic-icon.png) left 5px no-repeat; */ height:95px; position:relative;}
+section>div.groupoptions{display:inline-block; margin-top:-35px; width:98%;}
+section>div.groupseperator>hr{border:0px;border-bottom:1px dashed #0072c6; top:45px;/* left:90px; */width: 98%;z-index:1;}
+section>div.groupseperator>button{right:-5px; top:30px; width:35px; height:35px; background:url(../images/sec-arrow-down.png) left 5px no-repeat; border:0; z-index:2; cursor:pointer;}
+div.groupseperator>button.up_arr{background-image:url(../images/sec-arrow-up.png);}
+section>p{margin-bottom:-40px; margin-top:10px;}
+section>div.groupoptions>ul>li>span{position:absolute; bottom:7px; right:10px; font-weight:bold; color:#f68b00;}
+section>div.groupoptions>ul{}
+section>div.groupoptions>ul>li{float:left; width:25%; margin:10px 20px 10px 0; padding:15px 20px 20px 20px;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+background:#f9f9f9;
+position:relative;
+height:75px;
+color:#878787;
+}
+section>div.groupoptions>ul>li>h3{color:#878787;}
+section>div.groupoptions>ul>li:before, section>div.groupoptions>ul>li:after {
+  z-index: -1; 
+  position: absolute; 
+  content: "";
+  bottom: 17px;
+  left: 5px;
+  width: 50%; 
+  top: 83%;
+  max-width:300px;
+  background: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+  transform: rotate(-3deg);
+}
+
+section>div.groupoptions>ul>li:after {
+  transform: rotate(3deg);
+  right: 5px;
+  left: auto;
+}
