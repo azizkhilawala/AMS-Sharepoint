@@ -9,7 +9,7 @@ $("section > h2").click(function(){
 
 ///dynamically add options --- begin
 
-$("select").prepend('<option>Select</option>');	
+$("select").prepend('<option>Select</option>');
 var heading1=[];
 var optionValue=[];
 function fillList(){
@@ -43,5 +43,3 @@ $("select[name='activity']").on('change',function(e){
  });
 
 ///onselect open accordion --- end
-
- 
